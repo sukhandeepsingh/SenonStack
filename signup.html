@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up to Sell Your Mobile</title>
+  <link rel="stylesheet" href="style_signup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sign Up</h1>
+    <form id="signupForm" action="success" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password">
+
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <p class="login-link">Already have an account? <a href="#">Log in</a></p>
+  </div>
+
+  <script>
+    const signupForm = document.getElementById('signupForm');
+
+signupForm.addEventListener('submit', async (event) => {
+  event.preventDefault();
+
+  const name = signupForm.name.value;
+  const email = signupForm.email.value;
+  const password = signupForm.password.value;
+
+  const response = await fetch('/success', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ name, email, password }),
+  });
+
+  if (response.ok) {
+    // Successful signup
+    window.location.href = '/login';
+  } else {
+    // Error during signup
+    alert('Error during signup. Please try again.');
+  }
+});
+
+
+  </script>
+</body>
+</html>

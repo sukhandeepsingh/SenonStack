@@ -1,0 +1,221 @@
+/* General Styles */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  /* Header Styles */
+  
+  header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-right: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  a:hover {
+    color: #007bff;
+  }
+  
+  .user-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  
+  .btn-login {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .btn-signup {
+    background-color: #fff;
+    border: 1px solid #007bff;
+    color: #007bff;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  /* Hero Section Styles */
+  
+  hero {
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    text-align: center;
+    color: #111010;
+    padding-top: 100px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  
+  /* Services Section Styles */
+  
+  .services {
+    padding: 50px 0;
+  }
+  
+  h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .servicelist {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  li {
+    margin-bottom: 20px;
+  }
+  
+  /* Why Choose Us Section Styles */
+  
+  .why-choose-us {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+  }
+  
+  .card {
+    width: 25%;
+    margin: 2% 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  
+  /* Footer Styles */
+  
+  footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #000;
+  }
+    
+
+
+
+
+
+
+
+
+
+
+
+/* Why Choose Us Section Styles */
+
+.why-choose-us {
+    padding: 50px 0;
+    background-color: #007bff;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .why-choose-us h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .why-choose-us .card {
+    width: 20%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }  
