@@ -1,0 +1,37 @@
+const contactForm = document.getElementById('contactForm');
+const successMessage = document.getElementById('success-message');
+
+contactForm.addEventListener('submit', async (event) => {
+  event.preventDefault();
+
+  const name = contactForm.name.value;
+  const email = contactForm.email.value;
+  const query = contactForm.query.value;
+
+  try {
+    // Send the contact form data to the backend server
+    const response = await fetch('/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ name, email, query }),
+    });
+
+    if (response.ok) {
+      // Successful submission
+      contactForm.reset();
+      successMessage.classList.remove('hidden');
+
+      setTimeout(() => {
+        successMessage.classList.add('hidden');
+      }, 5000);
+    } else {
+      // Error message
+      alert('Error submitting the form. Please try again later.');
+    }
+  } catch (err) {
+    console.error(err);
+    alert('An unexpected error occurred. Please try again later.');
+  }
+});
