@@ -2,6 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
+const cors = require("cors");
+app.use(cors());
 
 const app = express();
 const port = process.env.PORT || 3000;
